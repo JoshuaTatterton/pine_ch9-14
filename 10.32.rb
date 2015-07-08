@@ -23,13 +23,14 @@ def dict_sort ar
 end
 
 puts "Please enter a list of words you wish to be sorted (press enter between each, enter blank spance when finished)"
-array = ["hello", "err", "HI", "naah", "zzz", "CMOn"]
-#while true
-#	input = gets.chomp
-#	array.push input
-#	if input.length == 0
-#		break
-#	end
-#end
+array = []
+while true
+	input = gets.chomp
+	array.push input
+	if input.length == 0
+		break
+	end
+end
+# for some reason this wan't working before, but now it does... weird
 
-dict_sort ["hello", "err", "HI", "naah", "zzz", "CMOn"]
+dict_sort array
